@@ -4,10 +4,12 @@ import './App.css';
 import Mailbox from './pages/Mailbox';
 import Tier from './pages/Tier';
 import Kwonyeop from './pages/Kwonyeop';
+import CardTier from './pages/CardTier';
 
 const NAV_ITEMS = [
   { path: '/', label: '우체통' },
-  { path: '/tier', label: '티어' },
+  { path: '/tier', label: 'RP 티어' },
+  { path: '/cardtier', label: '카드 강화' },
   { path: '/kwonyeop', label: '권엽' },
 ];
 
@@ -33,6 +35,7 @@ function Layout() {
         <Routes>
           <Route path="/" element={<Mailbox />} />
           <Route path="/tier" element={<Tier />} />
+          <Route path="/cardtier" element={<CardTier />} />
           <Route path="/kwonyeop" element={<Kwonyeop />} />
         </Routes>
       </main>
