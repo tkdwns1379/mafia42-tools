@@ -8,6 +8,7 @@ import Kwonyeop from './pages/Kwonyeop';
 import CardTier from './pages/CardTier';
 import JikpulBak from './pages/JikpulBak';
 import Penalty from './pages/Penalty';
+import BoxGacha from './pages/BoxGacha';
 
 const NAV_ITEMS = [
   { path: '/', label: '우체통' },
@@ -16,6 +17,7 @@ const NAV_ITEMS = [
   { path: '/kwonyeop', label: '권엽' },
   { path: '/jikpulbak', label: '직플받' },
   { path: '/penalty', label: '벌점관련' },
+  { path: '/boxgacha', label: '상자깡 확률' },
 ];
 
 function Layout() {
@@ -74,6 +76,7 @@ function Layout() {
           <Route path="/kwonyeop" element={<Kwonyeop />} />
           <Route path="/jikpulbak" element={<JikpulBak />} />
           <Route path="/penalty" element={<Penalty />} />
+          <Route path="/boxgacha" element={<BoxGacha />} />
         </Routes>
       </main>
       <footer className="footer">
