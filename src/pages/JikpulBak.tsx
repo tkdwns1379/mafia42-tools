@@ -233,11 +233,11 @@ export default function JikpulBak() {
         <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
           <thead>
             <tr style={{ background: '#fafafa' }}>
-              <th style={{ padding: '8px 12px', textAlign: 'left', borderBottom: '1px solid #f0f0f0' }}>직업</th>
-              <th style={{ padding: '8px 12px', textAlign: 'center', borderBottom: '1px solid #f0f0f0' }}>팀</th>
-              <th style={{ padding: '8px 12px', textAlign: 'center', borderBottom: '1px solid #f0f0f0' }}>글자수</th>
-              <th style={{ padding: '8px 12px', textAlign: 'center', borderBottom: '1px solid #f0f0f0' }}>받침수</th>
-              <th style={{ padding: '8px 12px', textAlign: 'center', borderBottom: '1px solid #f0f0f0' }}>소계</th>
+              <th style={{ padding: '8px 12px', textAlign: 'left', borderBottom: '1px solid #f0f0f0', color: '#000' }}>직업</th>
+              <th style={{ padding: '8px 12px', textAlign: 'center', borderBottom: '1px solid #f0f0f0', color: '#000' }}>팀</th>
+              <th style={{ padding: '8px 12px', textAlign: 'center', borderBottom: '1px solid #f0f0f0', color: '#000' }}>글자수</th>
+              <th style={{ padding: '8px 12px', textAlign: 'center', borderBottom: '1px solid #f0f0f0', color: '#000' }}>받침수</th>
+              <th style={{ padding: '8px 12px', textAlign: 'center', borderBottom: '1px solid #f0f0f0', color: '#000' }}>소계</th>
             </tr>
           </thead>
           <tbody>
