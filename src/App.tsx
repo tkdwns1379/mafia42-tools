@@ -5,12 +5,14 @@ import Mailbox from './pages/Mailbox';
 import Tier from './pages/Tier';
 import Kwonyeop from './pages/Kwonyeop';
 import CardTier from './pages/CardTier';
+import JikpulBak from './pages/JikpulBak';
 
 const NAV_ITEMS = [
   { path: '/', label: '우체통' },
   { path: '/tier', label: 'RP 티어' },
   { path: '/cardtier', label: '카드 강화' },
   { path: '/kwonyeop', label: '권엽' },
+  { path: '/jikpulbak', label: '직플받' },
 ];
 
 function Layout() {
@@ -37,6 +39,7 @@ function Layout() {
           <Route path="/tier" element={<Tier />} />
           <Route path="/cardtier" element={<CardTier />} />
           <Route path="/kwonyeop" element={<Kwonyeop />} />
+          <Route path="/jikpulbak" element={<JikpulBak />} />
         </Routes>
       </main>
       <footer className="footer">
