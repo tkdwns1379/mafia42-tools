@@ -122,7 +122,6 @@ export default function BoxGacha() {
 
   const adjustedProbs = calcAdjustedProbs(owned);
   const uniqueItems = ITEMS.filter(item => item.unique);
-  const consumableItems = ITEMS.filter(item => !item.unique);
 
   const removedProb = ITEMS.reduce((sum, item, i) =>
     item.unique && owned.has(i) ? sum + item.prob : sum, 0);
@@ -156,7 +155,7 @@ export default function BoxGacha() {
 
         {showOwned && (
           <div style={{ marginTop: 12, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-            {uniqueItems.map((item, idx) => {
+            {uniqueItems.map((item) => {
               const globalIdx = ITEMS.indexOf(item);
               const isOwned = owned.has(globalIdx);
               return (
