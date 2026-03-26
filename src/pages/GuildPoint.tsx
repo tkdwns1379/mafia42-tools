@@ -78,13 +78,7 @@ export default function GuildPoint() {
       )}
 
       <div style={{ marginTop: 32, background: '#1a1d27', border: '1px solid #2e3248', borderRadius: 10, padding: 16, fontSize: 12, color: '#8b8fa8', lineHeight: 1.8 }}>
-        <div style={{ fontWeight: 700, color: '#e8e9f0', marginBottom: 8 }}>추정 공식</div>
-        <div>랭크 × 0.351</div>
-        <div>+ 명성 × 0.00191</div>
-        <div>+ 활동 × 0.0000466</div>
-        <div>+ 전투력 × 0.240</div>
-        <div>+ 3062</div>
-        <div style={{ marginTop: 8, color: '#7c6af7' }}>6개 데이터 기반 회귀분석으로 도출된 추정 공식입니다.</div>
+        ※ 본 계산기는 추정값으로, 실제 길드포인트와 다를 수 있습니다.
       </div>
     </div>
   );
