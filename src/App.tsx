@@ -7,6 +7,7 @@ import Tier from './pages/Tier';
 import Kwonyeop from './pages/Kwonyeop';
 import CardTier from './pages/CardTier';
 import JikpulBak from './pages/JikpulBak';
+import Penalty from './pages/Penalty';
 
 const NAV_ITEMS = [
   { path: '/', label: '우체통' },
@@ -14,6 +15,7 @@ const NAV_ITEMS = [
   { path: '/cardtier', label: '카드 강화' },
   { path: '/kwonyeop', label: '권엽' },
   { path: '/jikpulbak', label: '직플받' },
+  { path: '/penalty', label: '벌점관련' },
 ];
 
 function Layout() {
@@ -71,6 +73,7 @@ function Layout() {
           <Route path="/cardtier" element={<CardTier />} />
           <Route path="/kwonyeop" element={<Kwonyeop />} />
           <Route path="/jikpulbak" element={<JikpulBak />} />
+          <Route path="/penalty" element={<Penalty />} />
         </Routes>
       </main>
       <footer className="footer">
