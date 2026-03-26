@@ -9,6 +9,7 @@ import CardTier from './pages/CardTier';
 import JikpulBak from './pages/JikpulBak';
 import Penalty from './pages/Penalty';
 import BoxGacha from './pages/BoxGacha';
+import GuildPoint from './pages/GuildPoint';
 
 const NAV_ITEMS = [
   { path: '/', label: '우체통' },
@@ -18,6 +19,7 @@ const NAV_ITEMS = [
   { path: '/jikpulbak', label: '직플받' },
   { path: '/penalty', label: '벌점관련' },
   { path: '/boxgacha', label: '상자깡 확률' },
+  { path: '/guildpoint', label: '길드포인트' },
 ];
 
 function Layout() {
@@ -77,6 +79,7 @@ function Layout() {
           <Route path="/jikpulbak" element={<JikpulBak />} />
           <Route path="/penalty" element={<Penalty />} />
           <Route path="/boxgacha" element={<BoxGacha />} />
+          <Route path="/guildpoint" element={<GuildPoint />} />
         </Routes>
       </main>
       <footer className="footer">
