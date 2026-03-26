@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import './index.css';
 import './App.css';
@@ -16,10 +17,14 @@ const NAV_ITEMS = [
 ];
 
 function Layout() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="layout">
       <nav className="nav">
         <span className="nav-logo">마피아42 계산기</span>
+
+        {/* 데스크탑 메뉴 */}
         <div className="nav-links">
           {NAV_ITEMS.map(item => (
             <NavLink
@@ -32,7 +37,33 @@ function Layout() {
             </NavLink>
           ))}
         </div>
+
+        {/* 햄버거 버튼 (모바일) */}
+        <button className="hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="메뉴">
+          {menuOpen ? '✕' : '☰'}
+        </button>
       </nav>
+
+      {/* 모바일 드롭다운 메뉴 */}
+      {menuOpen && (
+        <>
+          <div className="mobile-overlay" onClick={() => setMenuOpen(false)} />
+          <div className="mobile-menu">
+            {NAV_ITEMS.map(item => (
+              <NavLink
+                key={item.path}
+                to={item.path}
+                end={item.path === '/'}
+                className={({ isActive }) => `mobile-menu-item${isActive ? ' active' : ''}`}
+                onClick={() => setMenuOpen(false)}
+              >
+                {item.label}
+              </NavLink>
+            ))}
+          </div>
+        </>
+      )}
+
       <main className="main">
         <Routes>
           <Route path="/" element={<Mailbox />} />
